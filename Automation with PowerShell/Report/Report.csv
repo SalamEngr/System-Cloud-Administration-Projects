@@ -1,0 +1,12 @@
+"Name","SamAccountName","Enabled","Department","Title","LastLogonDate"
+"Administrator","Administrator","True",,,"9/5/2026 11:03:20 PM"
+"Guest","Guest","False",,,
+"krbtgt","krbtgt","False",,,
+"John Maxwell","JMaxwell","True",,,"7/21/2026 3:50:50 PM"
+"Gregory Smith","GSmith","True",,,"8/3/2026 4:22:34 AM"
+"Bruce Johnson","BJohnson","True",,,"9/12/2026 8:11:15 PM"
+"Ryan Bush","Rbush","True","Finance","Credit Analyst","9/12/2026 7:20:13 PM"
+"Rebecca Dubois","Rdubois","True","Administration","Secretary","9/12/2026 7:28:30 PM"
+"Jeff Dossou","JDossou","True","Administration","Branch Manager","9/12/2026 7:44:18 PM"
+"Kader Tidjani","Ktidjani","False","IT","IT Director","9/12/2026 7:41:04 PM"
+"Claire Kerr","Ckerr","False","HR","HR Cordinator","9/12/2026 7:47:20 PM"
