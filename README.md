@@ -90,25 +90,25 @@ Objective: Automate repetitive Active Directory administration tasks using Power
 
 This phase extends the existing Active Directory lab by using PowerShell scripts and CSV files to perform five administrative tasks.
 
-1. Employee Onboarding
+- **Employee Onboarding**
 
 Automated the creation of five Active Directory user accounts from a CSV file containing employee information, including first name, last name, username, department, job title, and Organizational Unit.
 
 Verified account creation, corrected missing last-name attributes during testing, and confirmed that a newly created user could sign in and change their temporary password.
 
-2. Bulk Password Resets
+- **Bulk Password Resets**
 
 Created a CSV-driven workflow to reset passwords for selected Active Directory accounts. Tested the process by signing in with a reset password and verifying that the user was required to change it before completing the login process.
 
-3. Disabling Multiple User Accounts
+-**Disabling Multiple User Accounts**
 
 Automated the disabling of selected accounts. The script checks whether an account is already disabled before attempting an action, returning an appropriate status and avoiding unnecessary changes.
 
-4. Bulk User Attribute Updates
+-**Bulk User Attribute Updates**
 
 Used a CSV file and PowerShell script to update information for selected Active Directory users, then verified the changes in Active Directory.
 
-5. Active Directory Reporting
+-**Active Directory Reporting**
 
 Used the Get-ADUser cmdlet to retrieve user information and export the results to a CSV report. Imported the generated report back into PowerShell to verify that the exported information matched the retrieved Active Directory data.
 
