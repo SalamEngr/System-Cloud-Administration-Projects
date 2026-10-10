@@ -100,15 +100,15 @@ Verified account creation, corrected missing last-name attributes during testing
 
 Created a CSV-driven workflow to reset passwords for selected Active Directory accounts. Tested the process by signing in with a reset password and verifying that the user was required to change it before completing the login process.
 
--**Disabling Multiple User Accounts**
+- **Disabling Multiple User Accounts**
 
 Automated the disabling of selected accounts. The script checks whether an account is already disabled before attempting an action, returning an appropriate status and avoiding unnecessary changes.
 
--**Bulk User Attribute Updates**
+- **Bulk User Attribute Updates**
 
 Used a CSV file and PowerShell script to update information for selected Active Directory users, then verified the changes in Active Directory.
 
--**Active Directory Reporting**
+- **Active Directory Reporting**
 
 Used the Get-ADUser cmdlet to retrieve user information and export the results to a CSV report. Imported the generated report back into PowerShell to verify that the exported information matched the retrieved Active Directory data.
 
