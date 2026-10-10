@@ -13,6 +13,7 @@ This repository documents a virtual home lab built to practise enterprise Window
 | Domain               | `LABHOME.local`                          |
 | Client               | Windows 11 (domain-joined)               |
 | Core Services        | AD DS, DNS, Group Policy, File & Print Services |
+| Automation           | Windows PowerShell, Active Directory cmdlets, CSV files |
 
 ## Completed Labs
 
@@ -26,10 +27,10 @@ This repository documents a virtual home lab built to practise enterprise Window
 | 6 | Help Desk Support Tasks                     | Complete | [Issue #6](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/6) |
 | 7 | Shared Folder & Permissions Management      | Complete | [Issue #7](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/7) |
 | 8 | Group Policy Object (GPO) Configuration     | Complete | [Issue #8](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/8) |
-
+| 9 | PowerShell Automation for Active Directory  | Complete | [Issue #9](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/9)
 ## Skills Practised
 
-Windows Server administration, Active Directory Domain Services (AD DS), domain controller promotion, static IP & network adapter configuration (Host-Only/NAT), DNS, user and security group management, computer domain-join, GPO creation and linking, password & account lockout policy, Group Policy Preferences (drive mapping), desktop wallpaper deployment, removable storage restrictions, shared folder permissions (NTFS/share-level), help desk account support (password reset, lockout, disable/enable), and technical documentation.
+Windows Server administration, Active Directory Domain Services (AD DS), domain controller promotion, static IP & network adapter configuration (Host-Only/NAT), DNS, user and security group management, computer domain-join, GPO creation and linking, password & account lockout policy, Group Policy Preferences (drive mapping), desktop wallpaper deployment, removable storage restrictions, shared folder permissions (NTFS/share-level), help desk account support (password reset, lockout, disable/enable),CSV-based bulk processing, Active Directory cmdlets, user onboarding, password resets, account disabling, bulk attribute updates, report generation and technical documentation.
 
 ---
 
