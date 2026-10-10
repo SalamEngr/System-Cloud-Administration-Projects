@@ -82,6 +82,48 @@ Configured and tested five GPOs commonly used in enterprise AD environments, lin
 | Desktop Wallpaper Deployment | Pushes a standard corporate wallpaper domain-wide |
 | Removable Storage Restrictions | Blocks USB and other removable media to reduce data-leakage and malware risk |
 
+## Lab 9: PowerShell Automation for Active Directory
+
+Objective: Automate repetitive Active Directory administration tasks using PowerShell to reduce manual work, improve consistency, and practise administrative scripting.
+
+[View the PowerShell Automation Mini-Project documentation →](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/9)
+
+This phase extends the existing Active Directory lab by using PowerShell scripts and CSV files to perform five administrative tasks.
+
+1. Employee Onboarding
+
+Automated the creation of five Active Directory user accounts from a CSV file containing employee information, including first name, last name, username, department, job title, and Organizational Unit.
+
+Verified account creation, corrected missing last-name attributes during testing, and confirmed that a newly created user could sign in and change their temporary password.
+
+2. Bulk Password Resets
+
+Created a CSV-driven workflow to reset passwords for selected Active Directory accounts. Tested the process by signing in with a reset password and verifying that the user was required to change it before completing the login process.
+
+3. Disabling Multiple User Accounts
+
+Automated the disabling of selected accounts. The script checks whether an account is already disabled before attempting an action, returning an appropriate status and avoiding unnecessary changes.
+
+4. Bulk User Attribute Updates
+
+Used a CSV file and PowerShell script to update information for selected Active Directory users, then verified the changes in Active Directory.
+
+5. Active Directory Reporting
+
+Used the Get-ADUser cmdlet to retrieve user information and export the results to a CSV report. Imported the generated report back into PowerShell to verify that the exported information matched the retrieved Active Directory data.
+
+Skills Developed Through Automation
+PowerShell scripting and Active Directory cmdlets
+CSV data import and export
+Bulk user provisioning and account management
+Conditional logic and account-status checks
+Password management and first-logon security configuration
+Bulk modification of user attributes
+Report generation and output verification
+Troubleshooting and technical documentation
+
+The automation exercises demonstrate how PowerShell can replace repetitive manual administrative actions with repeatable, script-driven workflows.
+
 ---
 
 *This lab is ongoing — new labs are added as the environment is extended toward a hybrid on-premises/Azure setup.*
