@@ -157,7 +157,7 @@ Enabled Remote Desktop on the domain controller and configured the appropriate p
 
 Verified remote access to the server's graphical user interface, demonstrating how Remote Desktop Protocol (RDP) can be used to perform administrative tasks and troubleshoot Windows environments remotely.
 
-Skills Developed Through Remote Administration and Monitoring
+**Skills Developed Through Remote Administration and Monitoring**
 
 PowerShell Remoting (PSRemoting)
 Windows Remote Management (WinRM)
