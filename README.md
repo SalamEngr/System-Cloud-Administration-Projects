@@ -28,9 +28,10 @@ This repository documents a virtual home lab built to practise enterprise Window
 | 7 | Shared Folder & Permissions Management      | Complete | [Issue #7](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/7) |
 | 8 | Group Policy Object (GPO) Configuration     | Complete | [Issue #8](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/8) |
 | 9 | PowerShell Automation for Active Directory  | Complete | [Issue #9](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/9)
+| 10 | Windows Remote Troubleshooting, Event Log Analysis & Remote Desktop | Complete | [Issue #10](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/10)
 ## Skills Practised
 
-Windows Server administration, Active Directory Domain Services (AD DS), domain controller promotion, static IP & network adapter configuration (Host-Only/NAT), DNS, user and security group management, computer domain-join, GPO creation and linking, password & account lockout policy, Group Policy Preferences (drive mapping), desktop wallpaper deployment, removable storage restrictions, shared folder permissions (NTFS/share-level), help desk account support (password reset, lockout, disable/enable),CSV-based bulk processing, Active Directory cmdlets, user onboarding, password resets, account disabling, bulk attribute updates, report generation and technical documentation.
+Windows Server administration, Active Directory Domain Services (AD DS), domain controller promotion, static IP & network adapter configuration (Host-Only/NAT), DNS, user and security group management, computer domain-join, GPO creation and linking, password & account lockout policy, Group Policy Preferences (drive mapping), desktop wallpaper deployment, removable storage restrictions, shared folder permissions (NTFS/share-level), help desk account support (password reset, lockout, disable/enable),CSV-based bulk processing, Active Directory cmdlets, user onboarding, password resets, account disabling, bulk attribute updates, report generation and technical documentation, PowerShell Remoting (PSRemoting), Windows Remote Management (WinRM), remote service management, Windows Firewall troubleshooting, TCP port connectivity testing, Group Policy troubleshooting, Windows Event Viewer, Windows Security and System logs, Event ID filtering, PowerShell event log queries, Remote Desktop Protocol (RDP) configuration and remote administration.
 
 ---
 
@@ -123,6 +124,56 @@ Report generation and output verification
 Troubleshooting and technical documentation
 
 The automation exercises demonstrate how PowerShell can replace repetitive manual administrative actions with repeatable, script-driven workflows.
+
+## Lab 10: Windows Remote Troubleshooting, Event Log Analysis & Remote Desktop
+
+Objective: Practise remote Windows administration, troubleshoot connectivity and service-related issues, investigate Windows Event Logs, and configure Remote Desktop access within a domain environment.
+
+[View the Windows Remote Troubleshooting, Event Log Analysis & Remote Desktop documentation →](https://github.com/SalamEngr/System-Cloud-Administration-Projects/issues/10)
+
+This phase extends the existing Active Directory lab by introducing remote administration and monitoring techniques commonly used by System Administrators to diagnose and resolve issues on domain-joined computers without requiring physical access.
+
+- **Windows Remote Troubleshooting**
+
+Enabled PowerShell Remoting (PSRemoting) and configured Windows Remote Management (WinRM) to facilitate remote administration of domain-joined computers. Verified network connectivity, tested remote management capabilities, and performed administrative queries between the Windows Server 2022 domain controller (DC-01) and the Windows 11 client.
+
+Investigated and resolved remote connectivity issues by reviewing Windows Firewall rules and troubleshooting Group Policy restrictions. Identified a policy restricting external resource access, addressed the configuration, and successfully tested WinRM connectivity over TCP port 5985.
+
+- **Remote Windows Service Management**
+
+Simulated a real-world service failure by deliberately stopping the Print Spooler service on the user's workstation.
+
+Used PowerShell Remoting from the domain controller to remotely query the service status, investigate the Windows System Event Log, identify the issue, and restart the Print Spooler service. Verified that the service was running again without physically accessing the workstation.
+
+- **Windows Event Log Analysis and Monitoring**
+
+Explored Windows Event Viewer through the graphical interface to investigate Windows Security logs, review audit categories, and understand the relationship between security events and their associated Event IDs.
+
+Used PowerShell to query and filter Windows Event Logs by specific Event IDs, demonstrating how administrators can investigate security-related activities, identify system errors, and troubleshoot operational issues.
+
+Remote Desktop Configuration and Access
+
+Enabled Remote Desktop on the domain controller and configured the appropriate permissions to allow an authorized domain user to establish a remote connection.
+
+Verified remote access to the server's graphical user interface, demonstrating how Remote Desktop Protocol (RDP) can be used to perform administrative tasks and troubleshoot Windows environments remotely.
+
+Skills Developed Through Remote Administration and Monitoring
+
+PowerShell Remoting (PSRemoting)
+Windows Remote Management (WinRM)
+Remote Windows service administration
+Windows Firewall configuration and troubleshooting
+TCP port connectivity testing (5985)
+Group Policy troubleshooting
+Windows Event Viewer and Event Log analysis
+Windows Security and System log investigation
+Event ID filtering and PowerShell event queries
+Remote Desktop Protocol (RDP) configuration
+Remote access management and troubleshooting
+System monitoring and service recovery
+Technical documentation and troubleshooting procedures
+
+The exercises demonstrate how remote administration, Event Log analysis, and Remote Desktop can be combined to diagnose system issues, monitor domain-joined computers, and perform administrative tasks efficiently in a Windows Server environment.
 
 ---
 
